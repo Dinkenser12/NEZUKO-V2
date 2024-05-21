@@ -10,18 +10,18 @@ let HANDLER = "false";
 module.exports = {
   ANTILINK: toBool(process.env.ANTI_LINK) || false,
   LOGS: toBool(process.env.LOGS) || true,
-  ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
+  ANTILINK_ACTION: process.env.ANTI_LINK || "warn",
   SESSION_ID:process.env.SESSION_ID || " ",
   LANG: process.env.LANG || "EN",
-  HANDLERS: process.env.PREFIX || '^[.]',
+  HANDLERS: process.env.PREFIX || '🧋',
   BRANCH: "main",
-  WARN_COUNT: 3,
+  WARN_COUNT: 5,
   STICKER_DATA: process.env.STICKER_DATA || "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃;𝐆𝐎𝐃 𝐙𝐄𝐍𝐈𝐓𝐒𝐔",
-  BOT_INFO: process.env.BOT_INFO || "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃;𝐆𝐎𝐃 𝐙𝐄𝐍𝐈𝐓𝐒𝐔;https://i.imgur.com/o3AEXEj.jpeg",
+  BOT_INFO: process.env.BOT_INFO || "𝐍𝐄𝐙𝐔𝐊𝐎 𝐌𝐃;𝐆𝐎𝐃 𝐙𝐄𝐍𝐈𝐓𝐒𝐔;https://i.imgur.com/imOAWEN.jpeg",
   AUDIO_DATA: process.env.AUDIO_DATA || "Gᴏᴅ-Zᴇɴɪᴛꜱᴜ;Qᴜᴇᴇɴ-Nᴇᴢᴜᴋᴏ;https://graph.org/file/3879cf1910f65bd8457d7.jpg",
   ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",
   CAPTION: process.env.CAPTION || "𝐍𝐄𝐙𝐔𝐊𝐎🦋",
-  WORK_TYPE: process.env.WORK_TYPE || "private",
+  WORK_TYPE: process.env.WORK_TYPE || "public",
   DATABASE_URL: DATABASE_URL,
   DATABASE:
     DATABASE_URL === "./lib/database.db"
