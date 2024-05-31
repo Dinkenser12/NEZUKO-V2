@@ -11,7 +11,7 @@ module.exports = {
   ANTILINK: toBool(process.env.ANTI_LINK) || false,
   LOGS: toBool(process.env.LOGS) || true,
   ANTILINK_ACTION: process.env.ANTI_LINK || "warn",
-  SESSION_ID:process.env.SESSION_ID || "QUEEN-NEZUKO~cNHhmnkaUfp0S8Msl0fgw",
+  SESSION_ID:process.env.SESSION_ID || "QUEEN-NEZUKO~Gae1ax7YDMt4mV2N3RGoE",
   LANG: process.env.LANG || "EN",
   HANDLERS: process.env.PREFIX || '🧋',
   BRANCH: "main",
@@ -21,7 +21,7 @@ module.exports = {
   AUDIO_DATA: process.env.AUDIO_DATA || "Gᴏᴅ-Zᴇɴɪᴛꜱᴜ;Qᴜᴇᴇɴ-Nᴇᴢᴜᴋᴏ;https://graph.org/file/3879cf1910f65bd8457d7.jpg",
   ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",
   CAPTION: process.env.CAPTION || "𝐍𝐄𝐙𝐔𝐊𝐎🦋",
-  WORK_TYPE: process.env.WORK_TYPE || "public",
+  WORK_TYPE: process.env.WORK_TYPE || "private",
   DATABASE_URL: DATABASE_URL,
   DATABASE:
     DATABASE_URL === "./lib/database.db"
