@@ -33,13 +33,13 @@ command(
     },
     async (message, match, client) => {
         const start = new Date().getTime();
-      let { key } = await message.sendMessage(`*𝗣𝗶𝗻𝗴 ⎊*`);
+      let { key } = await message.sendMessage(`*❬ ᴛᴇꜱᴛɪɴɢ ᴩɪɴɢ❭*`);
         const end = new Date().getTime();
 var speed = end - start;
  
 await new Promise(t => setTimeout(t,0))
-         await message.client.sendMessage(message.jid,{text:`*𝗣𝗼𝗻𝗴* 📡
-${speed} *𝗺𝘀*` , edit: key});
+         await message.client.sendMessage(message.jid,{text:`*ᴩᴏɴɢ!* 📡
+${speed} *ᴍꜱ*` , edit: key});
 })
 
 /* Copyright (C) 2022 X-Electra.
@@ -120,7 +120,7 @@ command(
       });
     } else {
       await message.block(message.jid);
-      return await message.reply("_User blocked_");
+      return await message.reply("_Enemy blocked_");
     }
   }
 );
@@ -228,18 +228,18 @@ Description: ${i.desc}\`\`\``);
         .split(",");
         let usern = message.pushName
         const readMore = String.fromCharCode(8206).repeat(4001);
-      let menu = `\n╭═══〔 ${BOT_INFO.split(";")[0]} 〕═══⊷
-  ╭════════════════⊷    
-  ┃✦┃ *𝐎𝐰𝐧𝐞𝐫*: ${BOT_INFO.split(";")[1]}
-  ┃✦┃ *𝐔𝐬𝐞𝐫*: ${usern}
-  ┃✦┃ *𝐃𝐚𝐭𝐞*: ${date}
-  ┃✦┃ *𝐓𝐢𝐦𝐞*: ${time}
-  ┃✦┃ *𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬*: ${plugins.commands.length}
-  ┃✦┃ *𝐌𝐨𝐝𝐞*: ${config.WORK_TYPE}
-  ┃✦┃ *𝐏𝐫𝐞𝐟𝐢𝐱*: ${config.HANDLERS}
-  ┃✦┃ *𝐕𝐞𝐫𝐬𝐢𝐨𝐧*: ${require("../package.json").version}
-  ╰═════════════════⊷  
-╰══════════════ \n ${readMore}\n╭══════════════⊷`;
+      let menu = `\n╭━━━〔 ${BOT_INFO.split(";")[0]} 〕━━┈⊷
+  ╭────────────────⊷   
+  ┃✯│ owner: ${BOT_INFO.split(";")[1]}
+  ┃✯│ user: ${usern}
+  ┃✯│ date: ${date}
+  ┃✯│ time: ${time}
+  ┃✯│ plugins: ${plugins.commands.length}
+  ┃✯│ mode: ${config.WORK_TYPE}
+  ┃✯│ prefix: ${config.HANDLERS}
+  ┃✯│ version: ${require("../package.json").version}
+  ╰─────────────────⊷  
+‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎ ❐ 𝐏𝐋𝐔𝐆𝐈𝐍𝐒 ❒`;
 
       let cmnd = [];
       let cmd;
@@ -259,17 +259,17 @@ Description: ${i.desc}\`\`\``);
       });
       cmnd.sort();
       category.sort().forEach((cmmd) => {
-        menu += `\n   ╭══════════════⊷`;
-        menu += `\n  ❖┋  ❲ *${cmmd.toUpperCase()}* ❳`;
-        menu += `\n   ╰══════════════⊷`
-        menu += `\n   ╭══════════════⊷`;
+        menu += `\n   ╭─────────────┈⊷`;
+        menu += `\n   │  *${cmmd.toUpperCase()}* ⏎`;
+        menu += `\n   ╰─────────────┈⊷`
+        menu += `\n  ╭─────────────┈⊷`;
         let comad = cmnd.filter(({ type }) => type == cmmd);
         comad.forEach(({ cmd }) => {
-          menu += `\n   ✵  ${cmd.trim()}`;
+          menu += `\n  ││◦➛   ${cmd.trim()}`;
         });
-        menu += `\n   ╰═════════════⊷`;
+        menu += `\n  ╰─────────────┈⊷`;
       });
-menu += `\n╰══════════════⊷`;
+menu += `\n╰─────────────┈⊷`;
       let penu = tiny(menu)
       let vd = BOT_INFO.split(";")[2];
       return await message.sendFromUrl(vd, {fileLength: "500000000", gifPlayback: true, contextInfo: {
